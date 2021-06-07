@@ -1,0 +1,10 @@
+<!-- Stock Trading Website -->
+
+<!-- Displays real-time price for a stock to a user. -->
+
+{% extends "layout.html" %}
+
+{% block main %}
+<!-- Used in conjunction with application.py /quote. -->
+    A share of {{name}} ({{symbol}}) costs {{price}}.
+{% endblock %}

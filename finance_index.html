@@ -1,0 +1,47 @@
+<!-- Stock Trading Website -->
+
+<!-- Shows all of the currently logged in user's owned stocks and their information. -->
+
+{% extends "layout.html" %}
+
+{% block main %}
+    <!-- A table for our stocks. -->
+    <table class="table" id=stock_table>
+      <thead>
+        <!-- Headers for the table columns. -->
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+         <!-- For each row we get in application.py we should get these attributes for a stock. -->
+        {% for stock in all_stocks %}
+          <tr>
+              <td>{{ stock[0] }}</td>
+              <td>{{ stock[1] }}</td>
+              <td>{{ stock[2] }}</td>
+              <td>{{ stock[3] }}</td>
+              <td>{{ stock[4] }}</td>
+          </tr>
+        {% endfor %}
+        <tr>
+            <th scope="col">CASH</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ final_cash }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>{{ grand_total }}</b></td>
+        </tr>
+      </tbody>
+    </table>
+{% endblock %}

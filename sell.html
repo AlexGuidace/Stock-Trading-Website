@@ -1,0 +1,22 @@
+<!-- Stock Trading Website -->
+
+<!-- A page where a user can sell stocks. Provides a dropdown menu of stocks owned by the user. -->
+
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div>
+            <!-- A select menu for fetching all of the stocks in a user's portfolio and displaying them to be chosen from. -->
+            <select name=symbol style="padding: 8px; margin: 20pt; border-radius: 5px; border-color: LightGray;">
+                {% for symbol in stocks_list %}
+                    <option>{{ symbol }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}
