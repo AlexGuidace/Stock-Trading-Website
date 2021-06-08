@@ -8,6 +8,20 @@ Through this app, I can register as a user, get information about real-time stoc
 This project was part two of [Harvard CS50's Web Development Track](https://cs50.harvard.edu/x/2020/tracks/web/) (as opposed to various other tracks, such as Game or Mobile App Development). Part one was to build a series of static web pages using Vanilla JavaScript, HTML, and CSS.
 
 [Click here to watch a video demo of this app.](https://www.youtube.com/watch?v=Ipbgx6DzD6w)
+
+Pictures of the application are below. Click them for larger versions.
+
+<img src="images/ AAPL Quote.png" width="1000">
+<img src="images/ Login.png" width="1000">
+<img src="images/ Quote Empty.png" width="1000">
+<img src="images/ Stock Portfolio.png" width="1000">
+<img src="images/ Transaction History.png" width="1000">
+<img src="images/Buy.png" width="1000">
+<img src="images/Error Page.png" width="1000">
+<img src="images/Register.png" width="1000">
+<img src="images/SQLite DB.png" width="1000">
+<img src="images/Sell.png" width="1000">
+
 #
 
 # Project Files
