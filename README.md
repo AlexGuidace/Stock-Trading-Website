@@ -11,16 +11,16 @@ This project was part two of [Harvard CS50's Web Development Track](https://cs50
 
 Pictures of the application are below. Click them for larger versions.
 
-<img src="images/ AAPL Quote.png" width="1000">
-<img src="images/ Login.png" width="1000">
-<img src="images/ Quote Empty.png" width="1000">
-<img src="images/ Stock Portfolio.png" width="1000">
-<img src="images/ Transaction History.png" width="1000">
-<img src="images/Buy.png" width="1000">
-<img src="images/Error Page.png" width="1000">
-<img src="images/Register.png" width="1000">
-<img src="images/SQLite DB.png" width="1000">
-<img src="images/Sell.png" width="1000">
+<img src="images/ AAPL Quote.png">
+<img src="images/ Login.png">
+<img src="images/ Quote Empty.png">
+<img src="images/ Stock Portfolio.png">
+<img src="images/ Transaction History.png">
+<img src="images/Buy.png">
+<img src="images/Error Page.png">
+<img src="images/Register.png">
+<img src="images/SQLite DB.png">
+<img src="images/Sell.png">
 
 #
 
@@ -41,6 +41,7 @@ The following links contain summary overviews of each file used in the project. 
 * [quoted.html](#quoted.html)
 * [register.html](#register.html)
 * [sell.html](#sell.html)
+* [requirements.txt](#requirements.txt)
 
 ## application.py
 This is the main application file that our web framework, Flask, will run from. We too use this file to interact with our
@@ -87,6 +88,9 @@ User registration page.
 
 ## sell.html
 A page where a user can sell stocks. Provides a dropdown menu of stocks owned by the user.
+
+## requirements.txt
+A file that specifies what packages are necessary to run the application.
 
 # License & Copyright
 © Alex Guidace
