@@ -52,7 +52,7 @@ Session(app)
 # db = SQL("sqlite:///finance.db")
 
 # Configure CS50 Library to use PostgreSQL database for Heroku.
-db = SQL("sqlite:///finance.db")
+db = SQL(os.getenv("postgres://trnzzlqpeejvrs:704b47e84db641ba390782001d3fe07907ef810eef5047526c631b9cd721b419@ec2-34-230-115-172.compute-1.amazonaws.com:5432/devrm3vqtn824o"))
 
 # Make sure API key is set.
 if not os.environ.get("API_KEY"):
