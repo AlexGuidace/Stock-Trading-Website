@@ -1,0 +1,31 @@
+<!-- Stock Trading Website -->
+
+<!-- Displays a user's transaction history to a logged-in user. -->
+
+{% extends "layout.html" %}
+
+{% block main %}
+    <!-- A table for our stocks. -->
+    <table class="table" id=history_table>
+      <thead>
+        <!-- Headers for the table columns -->
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">Transacted</th>
+        </tr>
+      </thead>
+      <tbody>
+         <!-- Displays each transaction row to the user -->
+        {% for list in history_list %}
+          <tr>
+              <td>{{ list[0] }}</td>
+              <td>{{ list[1] }}</td>
+              <td>{{ list[2] }}</td>
+              <td>{{ list[3] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}
