@@ -1,7 +1,7 @@
 # Stock Trading Website
 
-# A virtual stock trading Flask website. It includes features like registering a user account,
-# grabbing quotes for shares of stocks, virtual buying and selling of said stocks,
+# A virtual stock trading Flask website. It includes features like registering a user account, 
+# grabbing quotes for shares of stocks, virtual buying and selling of said stocks, 
 # and being able to view a history of transactions.
 
 # Built with Flask, Python, SQL, HTML, CSS, Jinja, and JavaScript.
@@ -49,10 +49,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database.
-# db = SQL("sqlite:///finance.db")
-
-# Configure CS50 Library to use PostgreSQL database for Heroku.
-db = SQL(os.getenv("postgres://trnzzlqpeejvrs:704b47e84db641ba390782001d3fe07907ef810eef5047526c631b9cd721b419@ec2-34-230-115-172.compute-1.amazonaws.com:5432/devrm3vqtn824o"))
+db = SQL("sqlite:///finance.db")
 
 # Make sure API key is set.
 if not os.environ.get("API_KEY"):
@@ -110,7 +107,7 @@ def index():
             # then add them to get the total number of shares for this stock.
             all_shares = db.execute("SELECT shares FROM stocks WHERE symbol=:stock_symbol AND user_id=:user_id",
                                     stock_symbol=stock_symbol, user_id=user_id)
-            # Transform dict values (as this is the format received from db.execute) in "shares" column to int from
+            # Transform dict values (as this is the format received from db.execute) in "shares" column to int from 
             # all_shares.
             for key in all_shares:
                 # Calculate how many shares we have for this stock.
@@ -143,7 +140,7 @@ def index():
     final_cash = usd(unformatted_final_cash)
     # Get the grand total, which will be our final cash plus the totals of all our stocks.
     grand_total = usd(unformatted_final_cash + shares_total_sum)
-    # Render all of the user's stocks and their information, along with user's information, to the screen after they
+    # Render all of the user's stocks and their information, along with user's information, to the screen after they 
     # hit buy.
     return render_template("finance_index.html", all_stocks=all_stocks, final_cash=final_cash, grand_total=grand_total)
 
@@ -167,7 +164,7 @@ def buy():
         # so we'll return an apology.
         if not symbol or stock_info == None:
             return apology("stock symbol not entered or stock symbol does not exist!", 403)
-        # If the user entered nothing or a negative shares value, we issue an apology. Determining
+        # If the user entered nothing or a negative shares value, we issue an apology. Determining 
         # if a number is an int or float: https://note.nkmk.me/en/python-check-int-float/
         if not shares or int(shares) < 1 or isinstance(shares, float):
             return apology("share amount was not entered or entry was less than 1.", 403)
@@ -179,7 +176,7 @@ def buy():
         # Otherwise the stock does exist, and so we'll parse the stock information into our list.
         for value in stock_info.values():
             stock_info_list.append(value)
-        # Give each index their appropriate declarations so we can use them correctly in our
+        # Give each index their appropriate declarations so we can use them correctly in our 
         # quoted.html template.
         name = stock_info_list[0]
         # Format the price using helpers.usd() to show its currency.
@@ -202,7 +199,7 @@ def buy():
         total = int(shares) * float(unformatted_price)
         # If user can afford number of shares at the current price, make the purchase.
         if total <= cash_balance['cash']:
-            # Get user's new cash total. Use 'cash' to get the numerical value of the user's cash value for
+            # Get user's new cash total. Use 'cash' to get the numerical value of the user's cash value for 
             # the row we are looking at.
             new_cash_total = cash_balance['cash'] - total
             # Change amount of user's cash in users after transaction.
