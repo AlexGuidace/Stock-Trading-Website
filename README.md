@@ -19,8 +19,8 @@ Pictures of the application are below. Click them for larger versions.
 <img src="images/Buy.png">
 <img src="images/Error Page.png">
 <img src="images/Register.png">
-<img src="images/SQLite DB.png">
 <img src="images/Sell.png">
+<img src="images/SQLite DB.png">
 
 #
 
