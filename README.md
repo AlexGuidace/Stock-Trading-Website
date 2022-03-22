@@ -2,9 +2,6 @@
 <a href="https://alexguidace.github.io/">
     <img alt="Portfolio Website Badge" src="https://img.shields.io/badge/Portfolio-alexguidace.github.io-brightgreen?style=flat-square">
 </a>
-<a href="https://www.linkedin.com/in/alexguidace">
-    <img alt="LinkedIn Badge" src="https://img.shields.io/badge/LinkedIn-Alex_Guidace-brightgreen?logo=linkedin&logoColor=blue&style=flat-square">
-</a>
 
 # **Stock Trading Website**
 
