@@ -32,21 +32,21 @@ Pictures of the application are below. Click them for larger versions.
 # Project Files
 The following links contain summary overviews of each file used in the project. Please refer to a file's code directly for specific implementation and details regarding that file.
 
-* [application.py](#application.py)
-* [helpers.py](#helpers.py)
-* [finance.db](#finance.db)
-* [styles.css](#styles.css)
-* [apology.html](#apology.html)
-* [buy.html](#buy.html)
-* [finance_index.html](#finance_index.html)
-* [history.html](#history.html)
-* [layout.html](#layout.html)
-* [login.html](#login.html)
-* [quote.html](#quote.html)
-* [quoted.html](#quoted.html)
-* [register.html](#register.html)
-* [sell.html](#sell.html)
-* [requirements.txt](#requirements.txt)
+* [application.py](#applicationpy)
+* [helpers.py](#helperspy)
+* [finance.db](#financedb)
+* [styles.css](#stylescss)
+* [apology.html](#apologyhtml)
+* [buy.html](#buyhtml)
+* [finance_index.html](#finance_indexhtml)
+* [history.html](#historyhtml)
+* [layout.html](#layouthtml)
+* [login.html](#loginhtml)
+* [quote.html](#quotehtml)
+* [quoted.html](#quotedhtml)
+* [register.html](#registerhtml)
+* [sell.html](#sellhtml)
+* [requirements.txt](#requirementstxt)
 
 ## application.py
 This is the main application file that our web framework, Flask, will run from. We too use this file to interact with our
